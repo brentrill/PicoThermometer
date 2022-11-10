@@ -45,3 +45,5 @@ The LED will turn on if the code is executing. You can now see published data wi
 `source /opt/ros/dashing/setup.bash`
 
 `ros2 topic echo /pico_publisher`
+
+![Published Results](https://images2.imgbox.com/28/ea/ndTyMbzM_o.png)
