@@ -19,3 +19,15 @@ Following the Pico [pin-out diagram](https://datasheets.raspberrypi.com/pico/Pic
 The potentiometer, used to calibrate the servo, receives voltage from PIN 36, outputs to PIN 31 (ADC0), and is grounded by PIN 23.
 
 This is all the necessary wiring as the Pico can read temperature from it's RP2040 chip internally.
+
+### Software Setup
+I include my CMake build folder so that one can easily flash the Pico with the program without all the software setup.
+I'll also explain my environment if you wish to build it as well.
+
+Install ROS2 Foxy with Ubuntu Linux 20.04.5.
+Follow [this previously mentioned guide](https://ubuntu.com/blog/getting-started-with-micro-ros-on-raspberry-pi-pico) in order to make sure the environment is working.
+After cloning this repository, make sure the settings.json file in the .vscode folder points to your PICO_SDK_PATH.
+Then, build the project in VS Code as in the guide.
+
+## Running the Program
+Connect the Pico by USB in Boot 
