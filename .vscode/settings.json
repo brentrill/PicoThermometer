@@ -1,0 +1,8 @@
+{
+    "cmake.configureEnvironment": {
+        "PICO_SDK_PATH": "/home/$USER/micro_ros_ws/src/pico-sdk",
+    },
+    "files.associations": {
+        "rmw_microros.h": "c"
+    },
+}

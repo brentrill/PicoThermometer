@@ -1,0 +1,3 @@
+/home/clam/micro_ros_ws/src/temp/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/clam/micro_ros_ws/src/temp/build/pioasm/CMakeFiles/edit_cache.dir
+/home/clam/micro_ros_ws/src/temp/build/pioasm/CMakeFiles/pioasm.dir
