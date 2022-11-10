@@ -30,4 +30,18 @@ After cloning this repository, make sure the settings.json file in the .vscode f
 Then, build the project in VS Code as in the guide.
 
 ## Running the Program
-Connect the Pico by USB in Boot 
+Connect the Pico by USB while holding the BOOTSEL button. This will make it appear as an external media drive.
+
+Navigate to the project directory in a new terminal. Flash the Pico by executing the command,
+
+`cp build/temp.uf2 /media/$USER/RPI-RP2`
+
+Like the linked guide, the main loop will not execute unless the micro-ROS agent is running. Start it with the command in a new terminal,
+
+`micro-ros-agent serial --dev /dev/ttyACM0 baudrate=115200`
+
+The LED will turn on if the code is executing. You can now see published data with the commands
+
+`source /opt/ros/dashing/setup.bash`
+
+`ros2 topic echo /pico_publisher`
