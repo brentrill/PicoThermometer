@@ -50,7 +50,7 @@ The LED will turn on if the code is executing. You can now see published data wi
 `ros2 topic echo /pico_publisher`
 
 <p align="center">
-  <img src="https://images2.imgbox.com/28/ea/ndTyMbzM_o.png" alt="Published Results" width="738">
+  <img src="https://images2.imgbox.com/28/ea/ndTyMbzM_o.png" alt="Published Results">
 </p>
 
 ![Published Results](https://images2.imgbox.com/28/ea/ndTyMbzM_o.png)
