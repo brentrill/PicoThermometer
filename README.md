@@ -1,5 +1,5 @@
 # Pico Thermometer
-Pico Thermometer makes use of the Raspberry Pi Pico's internal temperature sensor to move a servo akin to a dial thermometer, including a potentiometer to calibrate the needle if needed. The application features a micro-ROS publisher for seamless integration into a larger robotic ecosystem with ROS 2. 
+Pico Thermometer makes use of the Raspberry Pi Pico's internal temperature sensor to move a servo akin to a dial thermometer, including a potentiometer to calibrate the needle position if needed. The application features a micro-ROS publisher for seamless integration into a larger robotic ecosystem with ROS 2. 
 
 <p align="center">
   <img src="https://images2.imgbox.com/96/20/LDNveEpF_o.jpg" alt="Pico Pic" width="738">
