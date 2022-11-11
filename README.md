@@ -27,9 +27,6 @@ Following the Pico [pin-out diagram](https://datasheets.raspberrypi.com/pico/Pic
 The potentiometer, used to calibrate the servo, receives voltage from PIN 36, outputs to PIN 31 (ADC0), and is grounded by PIN 23.
 
 ### Software Setup
-I include my CMake build folder so that one can easily flash the Pico with the program without the software setup.
-I'll also explain my environment if you wish to build it as well.
-
 #### Prerequisites
 - Ubuntu Linux 20.04.5
 - ROS2 Foxy
