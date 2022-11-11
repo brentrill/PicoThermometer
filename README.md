@@ -5,6 +5,11 @@ Pico Thermometer makes use of the Raspberry Pi Pico's internal temperature senso
   <img src="https://images2.imgbox.com/96/20/LDNveEpF_o.jpg" alt="Pico Pic" width="738">
 </p>
 
+## How It Works
+1. We make use of 2 of the Pico's analog-to-digital converters. One reads the voltage of a diode that is a proportion of temperature, and the other is used by the calibrating potentiometer.
+2. Servos work by moving to a specific position value given by its input. By setting the desired temperature range and translating 180 degrees of servo rotation into position values, we are able to tell the servo to move to a specific position based on temperature.
+3. After initializing all inputs and outputs according to documentation, the main while loop takes place in `microtemp.c`. Each iteration reads temperature and converts it to Fahrenheit, translates this into servo position by using a ratio and the calibration scale, then moves the servo by incrementing its position if needed.
+
 ## Installation
 For a general in-depth setup guide to working with micro-ROS on the Raspberry Pi Pico, refer to [this guide](https://ubuntu.com/blog/getting-started-with-micro-ros-on-raspberry-pi-pico). I will only explain what make my project unique in this readme.
 
