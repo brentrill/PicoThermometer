@@ -5,8 +5,6 @@ Pico Thermometer makes use of the Raspberry Pi Pico's internal temperature senso
   <img src="https://images2.imgbox.com/96/20/LDNveEpF_o.jpg" alt="Pico Pic" width="738">
 </p>
 
-![Project Pic](https://images2.imgbox.com/96/20/LDNveEpF_o.jpg)
-
 ## Installation
 For a general in-depth setup guide to working with micro-ROS on the Raspberry Pi Pico, refer to [this guide](https://ubuntu.com/blog/getting-started-with-micro-ros-on-raspberry-pi-pico). I will only explain what make my project unique in this readme.
 
@@ -50,5 +48,9 @@ The LED will turn on if the code is executing. You can now see published data wi
 `source /opt/ros/dashing/setup.bash`
 
 `ros2 topic echo /pico_publisher`
+
+<p align="center">
+  <img src="https://images2.imgbox.com/28/ea/ndTyMbzM_o.png" alt="Published Results" width="738">
+</p>
 
 ![Published Results](https://images2.imgbox.com/28/ea/ndTyMbzM_o.png)
