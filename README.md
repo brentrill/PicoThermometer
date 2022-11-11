@@ -52,5 +52,3 @@ The LED will turn on if the code is executing. You can now see published data wi
 <p align="center">
   <img src="https://images2.imgbox.com/28/ea/ndTyMbzM_o.png" alt="Published Results">
 </p>
-
-![Published Results](https://images2.imgbox.com/28/ea/ndTyMbzM_o.png)
