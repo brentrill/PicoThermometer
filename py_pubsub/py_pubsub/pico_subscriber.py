@@ -21,7 +21,7 @@ class PicoSubscriberNode(Node):
             String, "/pico_publisher", self.pico_callback, 10
             )
         
-        # Passing the GUI into the node so we can update it
+        # Taking the GUI window into the node
         self.ui = ui
 
     def pico_callback(self, msg: String):
@@ -64,6 +64,7 @@ def main(args=None):
     app = QApplication(sys.argv)
     window = Window()
     
+    # Passing the window object into the node so we can update it
     node = PicoSubscriberNode(window)
     executor = MultiThreadedExecutor()
     executor.add_node(node)
