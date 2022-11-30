@@ -55,3 +55,26 @@ The LED will turn on if the code is executing. You can now see published data wi
 <p align="center">
   <img src="https://images2.imgbox.com/28/ea/ndTyMbzM_o.png" alt="Published Results">
 </p>
+
+## Using the Python GUI
+The GUI depends on `PyQt5==5.15.4`. It also uses `rclpy` and `std_msgs` as part of the ROS 2 distribution for the Python subscriber node. In the cloned repository directory, you can check for missing dependencies with the command
+
+`rosdep install -i --from-path src --rosdistro foxy -y`
+
+Once everything is installed, navigate to the first `py_pubsub` directory in a terminal and run the command 
+
+`colcon build --symlink-install`
+
+to build the package. Then, source the setup files with the command
+
+`source install/setup.bash`
+
+and run the program using
+
+`ros2 run py_pubsub pico_subscriber`
+
+Assuming the Pico is still connected and executing its program, we should see the message data displayed in a new, small window.
+
+<p align="center">
+  <img src="https://images2.imgbox.com/de/c0/QNTTySTP_o.png" alt="Python GUI">
+</p>
